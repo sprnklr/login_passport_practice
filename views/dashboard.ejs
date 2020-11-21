@@ -1,0 +1,12 @@
+<h1>Dashboard</h1>
+
+<p> Welcome:
+
+    <% if (typeof user != 'undefined') {%> 
+    <%= user %>
+    <% } %> 
+</p>
+
+<form method="POST" action="/dashboard?_method=DELETE">
+    <input type="submit" value="Logout">
+</form>
